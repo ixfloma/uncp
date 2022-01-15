@@ -1,0 +1,958 @@
+/* Import Font*/
+@import url('../fonts/ubuntu/ubuntu.css');
+@import url('../fonts/roboto/roboto.css');
+
+/*
+--------- Common rules ---------
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+/* give body background some color instead of white :v */
+body{
+    background: #fff;
+    overflow-x: hidden;
+}
+
+/* make ubuntu as default font for input */
+input{
+    font-family: 'Ubuntu Regular' !important;
+}
+
+/* ubuntu font too*/
+select{
+    font-family: 'Ubuntu Regular' !important;
+}
+
+/*
+---------- Button ---------------
+*/
+button.berita-button,
+a.berita-button{
+    position: absolute;
+    right: 0px;
+    bottom: 5px;
+    border: medium none;
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: #fff;
+    background: #4caf50;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+    border:medium none;
+    min-height: 30px;
+    font-family: 'Ubuntu Regular',sans-serif;
+}
+
+a.berita-button:hover{
+    background: #00c853;
+    color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+@media (max-width:640px){
+    .news-wrapper .news-slurp{
+        margin-bottom: 15px !important#34763D;
+    }
+}
+
+a.green-button{
+    border: medium none;
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: #fff;
+    background: #4caf50;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+    border:medium none;
+    min-height: 30px;
+    font-family: 'Ubuntu Regular',sans-serif;
+}
+
+a.green-button:hover{
+    background: #00c853;
+    color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/*
+------------ Header -------------
+*/
+.header-wrapper{
+    background: #fff;
+    display: block;
+    position:relative;
+}
+
+.header-wrapper .header-menu{
+    float: right;
+    clear: left;
+    display: block;
+}
+
+@media (min-width:1024px){
+    .header-wrapper .header-logo img{
+        float:left;
+        position: absolute;
+        height: 90px;
+        z-index: 9;
+        left:200px;
+        top:5px;
+    }
+}
+
+@media (max-width:820px){
+    .header-wrapper .header-logo img{
+        float:left;
+        position: absolute;
+        width: 140px;
+        z-index: 9;
+        left:40px;
+    }
+}
+
+@media (max-width:480px){
+    .header-wrapper .header-logo img{
+        width: 120px;
+        z-index: 9; 
+    }
+}
+
+@media (min-width: 768px)
+{
+    .search-form{
+        position: absolute;
+        float:right;
+        right: 200px;
+        margin-top:10px;
+    }
+}
+
+@media (max-width: 480px)
+{
+    .search-form{
+        margin-top:10px;
+    }
+}
+
+/*
+------------ Navbar ------------
+*/
+@media (max-width:480px)
+{
+    .main-navbar .uk-navbar{
+        padding: 0px !important;
+        margin-left: 0px;
+    }
+
+    .secondary-navbar .uk-navbar{
+        padding: 0px !important;
+    }
+}
+
+.main-navbar .uk-navbar{
+    background: #fff !important;
+    padding: 0px 140px;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.12), 0px 2px 2px -1px rgba(0, 0, 0, 0.24);
+}
+
+@media (min-width: 800px)
+{
+    .main-navbar .uk-navbar{
+        padding-top: 40px;
+    }
+}
+
+.secondary-navbar .uk-navbar{
+    background: #fff !important;
+    padding: 0px 200px;
+}
+
+
+.main-navbar .uk-navbar{
+    border: medium none;
+}
+
+.secondary-navbar .uk-navbar{
+    border: none;
+}
+
+.main-navbar .uk-navbar.secondary{
+    box-shadow: none;
+    border:none;
+    z-index: 1001;
+}
+
+.main-navbar .uk-navbar .uk-navbar-nav li a
+{
+    font-size: 14px;
+    color: #000;
+}
+
+.secondary-navbar .uk-navbar .uk-navbar-nav li a
+{
+    font-size: 13px;
+    color: #000;
+}
+
+#main-menu li a:hover,
+#secondary-menu li a:hover,
+#main-menu li:hover,
+#secondary-menu li:hover{
+    color: #212121;
+    background: #ffdc00;
+    transition: all 280ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
+
+.submenu-dropdown{
+    background: #fff !important;
+    border: 1px solid #eee;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+    border: medium none;
+    z-index: 99;
+}
+
+.submenu-dropdown .submenu-items a:hover{
+    color: #fff;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+}
+
+#main-menu .uk-navbar-nav li a,
+#secondary-menu .uk-navbar-nav li a{
+    color:#000 !important;
+}
+
+.slicknav_menu{
+    display: none;
+}
+@media (max-width:480px)
+{
+    .slicknav_menu{
+        display: block;
+    }
+}
+/*
+--------- content ----------
+*/
+
+/* Slideshow */
+.slideshow-wrapper{
+    display: block;
+    padding-left: 200px !important;
+    padding-right: 200px !important;
+    padding-bottom: 4px !important;
+}
+
+.slideshow-wrapper .slideshow-text{
+    background: rgba(60, 60, 60, 0.8);
+    padding: 10px 30px; 
+}
+
+.slideshow-text h2{
+    color: #eee;
+    margin-bottom: 5px !important;
+}
+
+.slideshow-text span{
+    color: #eee;
+    font-family: 'Ubuntu Regular';
+}
+
+.slideshow-text:hover,
+.slideshow-text:hover h2,
+.slideshow-text:hover span
+{
+    color:#fff;
+    text-decoration: none !important;
+}
+
+.slideshow-wrapper .uk-slidenav-contrast{
+    color: rgba(0,0,0,0.1);
+}
+
+.slideshow-wrapper .uk-slidenav-contrast:hover{
+    color: #fff;
+}
+
+.slideshow-wrapper .uk-slideshow{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+    border: medium none;
+    height: auto;
+}
+
+/* only apply when display width > 768px*/
+@media (min-width:800px){
+    .wrapper{
+        margin: 0px 200px 0px 200px;
+        min-height: 480px;
+}}
+
+/* only apply when display width < 768 */
+@media (max-width:768px){
+    .wrapper{
+        margin: 0px 80px 0px 80px ;
+    }
+}
+
+/* only apply when display width < 480 */
+@media (max-width:480px){
+    .wrapper{
+        margin: 0px 0px 0px 0px ;
+    }
+}
+
+.content-panel > .uk-panel-title{
+    border-bottom: 2px solid #ffc107 !important;
+}
+
+.uk-panel.uk-panel-box.content-panel{
+    background: #fff !important;
+    /*border: 1px solid #eee;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0,0.05);
+    -moz-box-shadow : 0px 1px 1px rgba(0, 0, 0,0.05);
+    -webkit-box-shadow : 0px 1px 1px rgba(0, 0, 0,0.05);*/
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.24);
+    border: medium none;
+}
+
+@media (min-width:640px){
+    .content-margin{
+        margin-top:15px !important;
+}}
+
+@media (max-width:640px){
+    .content-margin{
+        margin-top:5px !important;
+}}
+
+/* News Box and it friend*/
+.news-wrapper{
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.news-wrapper .news-content{
+    padding-left: 10px;
+}
+
+.news-wrapper .news-content .news-title{
+    margin-bottom: 2px;
+}
+
+.news-wrapper .news-content .news-meta{
+    font-family: 'Roboto Regular';
+    font-size: 12px;
+}
+
+.news-wrapper .news-content .news-slurp{
+    font-family: 'Ubuntu Regular';
+    margin-top: 10px;
+    margin-bottom:20px;
+}
+
+.news-wrapper a.uk-thumbnail:hover{
+    transition: all 280ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    box-shadow:  0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* Gallery */
+.gallery-items .uk-slidenav:hover,
+.gallery-items .uk-slidenav:focus{
+    color : #fff;
+    font-size: 100px;
+}
+
+.gallery-items .uk-slidenav,
+.gallery-items .uk-slidenav{
+    font-size: 100px;
+}
+
+.gallery-slide > ul > li > span.description{
+    font-family: 'Ubuntu Regular';
+    font-size: 12px;
+    margin-top: 100px !important;
+    font-style: italic;
+}
+
+.content-panel.galleri{
+    height: 300px !important;
+}
+
+/* App box */
+.app-icon{
+    background: #ddd;
+    width: 140px;
+    height: 140px;
+}
+
+/* Pagination */
+.uk-pagination > .uk-active > span{
+    background: #4CAF50 !important;
+}
+
+/* Information Alert */
+.info-alert{
+    
+    margin-top:5px;
+    background: #fff !important;
+    font-family: 'Ubuntu Regular';
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/*
+------------ Footer -------------
+*/
+
+.footer.no-margin{
+    margin:0px !important;
+}
+.footer{
+    box-sizing: border-box;
+    position: relative;
+}
+
+@media (max-width:480px){
+    .footer{
+        margin-top: 5px;
+    }
+}
+
+.footer:after,
+.footer:before{
+    display: table;
+    content: "";
+}
+
+.footer:after{
+    clear: both;
+}
+
+.footer.brown{
+    background: #343333;
+}
+
+.footer.white{
+    background: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+    border:medium none;
+}
+
+.footer > .social-button{
+    margin: 0px 10px !important;
+    padding: 0px;
+}
+
+/* Make social button get 100% width on smaller device*/
+@media (max-width:480px){
+    .footer > .social-button{
+        margin: 0px 0px !important;
+    }
+
+    .footer > .social-button > ul > li{
+        width: 100%;
+    }
+}
+
+.footer > .social-button > ul{
+    list-style: outside none none !important;
+    padding: 0px;
+    margin:0px;
+}
+
+.footer > .social-button > ul > li{
+    position: relative !important;
+    float: right !important;
+}
+
+.social-button > ul > li > a{
+    font-family: 'Ubuntu Bold' !important;
+    font-size: 16px !important;
+    display: block;
+    margin:0px 10px;
+    text-decoration: none;
+    line-height: 40px;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.social-button > ul > li:hover a{
+    color: #fff !important;
+    outline: medium none;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+}
+
+li.facebook a{
+    color: #1976d2;
+}
+li.facebook:hover{
+    background: #1976d2 !important;
+}
+
+li.twitter a{
+    color: #00aced;
+}
+
+li.twitter:hover{
+    background: #00aced !important;
+}
+
+li.google a{
+    color: #dd4b39;
+}
+
+li.google:hover{
+    background: #dd4b39 !important;
+}
+
+li.rss a{
+    color: #ef6c00;
+}
+
+li.rss:hover{
+    background: #ef6c00 !important;
+}
+
+/* footer information */
+
+.footer > .information{
+    text-align: center;
+    color: #fff !important;
+}
+
+.information > .copyright > p{
+    font-family: 'Ubuntu Regular';
+    font-size: 12px !important;
+    color: #fff;
+    padding: 4px;
+    margin-bottom: 0px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+/* footer kerja sama */
+.footer.slider-kerja-sama{
+    margin-top: 15px;
+    box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.12), 0px -1px 3px rgba(0, 0, 0, 0.24);
+}
+
+.kerja-sama img{
+    height: 50px;
+    width: auto;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+.kerja-sama img:hover{
+    filter:gray;
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+
+}
+
+.kerja-sama li{
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media (min-width: 1024px){
+    .kerja-sama{
+        margin: 10px 200px;
+    }
+}
+/*
+------------ Sidebar ------------
+*/
+
+
+/* widget */
+.widget-item{
+   margin-bottom: 15px !important;
+   padding-left: 15px !important;
+}
+
+.widget-list ul.agenda,
+.widget-list ul.info-akademik{
+    list-style: outside none none;
+    padding:0px;
+}
+
+.widget-link{
+    float:right;
+    background: #4caf50 !important;
+    box-shadow:  0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.24);
+    color: #fff !important;
+}
+
+.widget-link:hover{
+    background: #00c853 !important;
+}
+
+.widget-link:hover{
+    text-decoration: none;
+}
+
+/* agenda */
+.widget-list .agenda li{
+    clear: both;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 5px 5px;
+    min-height: 70px;
+}
+
+.widget-list ul li a span.date{
+    color: #444;
+}
+
+.widget-list ul li a span.month{
+    color: #fff;
+}
+
+.widget-list .agenda-icon{
+    border: 1px solid  rgba(0, 0, 0, 0.12);
+    float: left;
+    margin-right: 10px;
+    width: 50px;
+}
+
+.widget-list .agenda-icon .month{
+    display: block;
+    padding: 2px;
+    background:  #4caf50;
+    text-align: center;
+    font-family: 'Ubuntu Regular';
+}
+
+.widget-list .agenda-icon .date{
+    display: block;
+    padding: 6px;
+    text-align: center;
+    font-family: 'Ubuntu Bold';
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.widget-list > .agenda-content{
+    width: 90%;
+}
+
+.agenda-content > .agenda-title{
+    font-family: 'Ubuntu Regular';
+    font-size: 14px;
+    font-weight: bold;
+    color:#444;
+}
+
+.agenda-content > .agenda-meta{
+    font-family: 'Ubuntu Regular';
+    color: #444;
+    font-size: 12px;
+}
+
+.agenda li:hover{
+    border-left: 3px solid #4caf50;
+    cursor: pointer;
+}
+
+.agenda li:hover a{
+    text-decoration: none;
+}
+
+.agenda li a{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.widget-list ul li{
+    margin-bottom: 10px;
+}
+
+/* info akademik */
+
+.info-akademik li{
+    clear: both;
+    padding: 5px 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.info-akademik li a{
+    margin-bottom: 0px;
+}
+
+.info-akademik .info-icon{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 50px;
+    color: #4caf50;
+    font-size: 300%;
+    text-align:center;
+}
+
+.info-akademik .info-content .info-meta{
+    font-family: 'Ubuntu Regular',sans-serif;
+    font-size: 12px;
+    color: #444;
+    clear: right;
+}
+
+.info-akademik .info-content .info-meta{
+    clear: right;
+}
+
+.info-akademik .info-content .info-title{
+    font-family: 'Ubuntu Bold',sans-serif;
+    color: #444;
+    clear: right;
+}
+
+.info-akademik .info-content .info-meta p{
+    margin: 0px 0px;
+}
+
+.info-akademik li:hover{
+    border-left: 3px solid #4caf50;
+    cursor: pointer;
+}
+
+.info-akademik li:hover a{
+    text-decoration: none;
+}
+
+/* download */
+
+.widget-list ul.download{
+    list-style: outside none none;
+    padding:0px;
+}
+
+.widget-list ul.download li{
+    margin-bottom: 10px;
+    clear: both;
+    padding: 5px 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.widget-list ul li a span.file-icon{
+    color: #444;
+}
+
+.widget-list ul li a span.file-size{
+    color: #fff;
+}
+
+.widget-list .download-icon{
+    border: 1px solid  rgba(0, 0, 0, 0.12);
+    float: left;
+    margin-right: 10px;
+    width: 50px;
+    margin-bottom: 8px;
+}
+
+.widget-list .download-icon .file-size{
+    display: block;
+    padding: 2px;
+    background:  #4caf50;
+    text-align: center;
+    font-size: 11px;
+    font-family: 'Ubuntu Regular';
+}
+
+.widget-list .download-icon .file-icon{
+    display: block;
+    padding: 6px;
+    text-align: center;
+    font-family: 'Ubuntu Bold';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.widget-list .download-content{
+    width: 95%;
+    min-height: 60px;
+}
+
+.download-content .download-title{
+    font-family: 'Ubuntu Regular';
+    font-size: 14px;
+    color:#444;
+}
+
+.download-content .download-date {
+    font-family: 'Ubuntu Regular',sans-serif;
+    font-size: 11px;
+    color: #444;
+    margin: 0px !important;
+} 
+
+.download li:hover{
+    border-left: 3px solid #4caf50;
+    cursor: pointer;
+}
+
+.download li:hover a{
+    text-decoration: none;
+}
+/*
+------------ Post Page ----------
+*/
+/* Post content */
+.post-content .uk-article-title{
+    font-family: 'Ubuntu Bold';
+    font-size: 28px;
+    margin-bottom: 0px;
+    color: #444;
+}
+
+.post-content .uk-article-meta{
+    font-family: 'Ubuntu Regular';
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.post-content .article-image{
+    margin-bottom: 10px;
+}
+
+.post-content .article-content p{
+    padding-top: 20px;
+    font-family: 'Ubuntu Regular';
+}
+
+.post-content .article-content.page p{
+    font-family: 'Ubuntu Regular';
+    padding-top:0px !important;
+    margin-top:0px !important;
+}
+
+.post-box .uk-panel-title{
+    margin-bottom: 0px;
+}
+
+.post-box .social-button > ul > li{
+    float: right !important;
+    list-style: outside none none;
+}
+
+.post-box .social-button > ul > li > a{
+    font-family: 'Ubuntu Regular' !important;
+    font-size: 14px !important;
+    display: block;
+    margin:0px 10px;
+    text-decoration: none;
+    line-height: 30px;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.social-button > ul > li:hover a{
+    color: #fff !important;
+    outline: medium none;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+}
+
+
+/* 
+--------- Sidebar--------
+ */
+/* Related Post */
+.related-post{
+    list-style: outside none none;
+    padding: 0px;
+}
+
+.related-post li{
+    clear: both;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 5px 5px;
+}
+
+.related-content{
+    color: #444;
+    width: 95%;
+}
+
+.related-post .related-icon{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    width: 80px;
+    height: 80px;
+    color: #2196F3;
+    font-size: 300%;
+    text-align:center;
+}
+
+.related-post .related-icon img{
+    height: 80%;
+}
+
+.related-content  .related-title{
+    font-family: 'Ubuntu Bold',sans-serif;
+}
+
+.related-content .related-meta span{
+    font-size: 12px;
+    font-family: 'Ubuntu Regular', sans-serif;
+}
+.related-post li:hover{
+    border-left: 3px solid #4caf50;
+    cursor: pointer;
+}
+
+.related-post li:hover a{
+    text-decoration: none;
+}
+
+/*
+---------- Modul -----------
+*/
+#agenda > .widget-agenda ul{
+    list-style: outside none none;
+    padding-left: 5px !important;
+}
+
+#agenda > .widget-agenda li{
+    margin: 10px 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding: 5px;
+}
+
+#agenda > .widget-agenda li a{
+    font-family: 'Ubuntu Regular';
+    color: #444;
+}
+
+#agenda > .widget-agenda li:hover{
+    border-left: 3px solid #4caf50;
+}
+
+/* Link App */
+.link_eksternal{
+    margin: 15px 200px;
+}
+
+.link_eksternal hr.uk-grid-divider{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.link_eksternal .uk-overlay-background{
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.link_eksternal .uk-overlay-panel{
+    padding: 5px;
+    height: 100%;
+    font-family: 'Ubuntu Regular',sans-serif;
+}

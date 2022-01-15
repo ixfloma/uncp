@@ -1,0 +1,33 @@
+$(document).ready(function(){
+    // timeago
+    $(".timeago").timeago();
+
+    // download item hover
+    $('li.download-items').hover(function(){
+        $('.download-icon',this).removeClass('uk-hidden');
+    }, function(){
+        $('.download-icon',this).addClass('uk-hidden');
+    });
+
+    $("#slicknav").slicknav();
+
+    var status=0;
+    $('.show-main-menu').click(function(e) {
+        if(status==0){
+            $('.mobile-menu').removeClass('uk-hidden');
+            status =1;
+        }
+        else{
+            $('.mobile-menu').addClass('uk-hidden');
+            status = 0;
+        }
+        e.preventDefault();
+    });
+
+    $('.uk-navbar #smart-menu').smartmenus({
+        subIndicatorsPos: 'append',
+        subIndicatorsText:'<i class="uk-icon-caret-down"></i>',
+        showTimeout:250
+    });
+
+});

@@ -1,0 +1,13 @@
+@font-face{
+	font-family: 'Ubuntu Regular';
+	src: url('Ubuntu-R.ttf') format('truetype');
+}
+
+.ubuntu-regular{font-family: 'Ubuntu Regular' !important;}
+
+@font-face{
+	font-family: 'Ubuntu Bold';
+	src: url('Ubuntu-B.ttf') format('truetype');
+}
+
+.ubuntu-bold{font-family: 'Ubuntu Bold';}
